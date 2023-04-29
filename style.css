@@ -1,0 +1,174 @@
+:root{
+    box-sizing: border-box;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.icon-1{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-2{
+    width: 20px;
+    height: 20px;   
+}
+
+.profile-1{
+    width: 30px;
+    height: 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+
+/* ************************    Header     ************************ */
+
+.header{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-1, .header-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 8px 32px;
+}
+
+.search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px; 
+    
+}
+
+.profile-functions{
+    display: flex;
+    align-items: center;
+    gap: 32px; 
+    
+}
+
+.profile-description{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px; 
+}
+
+.buttons{
+    display: flex;
+    gap: 64px;
+}
+
+.profile-picture{
+    width: 50px;
+    height: 50px;
+}
+
+.search-box{
+    width: 500px;
+}
+
+
+
+/* ************************    Sidebar     ************************ */
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 16px 32px;
+    border: 1px solid black;
+    /* background-color: rgb(156, 156, 241); */
+}
+
+.dashboard-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.icon-group, .sidebar-1{
+    display:flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* ************************    Main     ************************ */
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 1px solid black;
+}
+
+.main-1{
+    display: grid;
+    grid-template-rows: 50px repeat(auto-fit,minmax(100px,1fr));
+    grid-template-columns: 1fr;
+    padding: 16px;
+    border: 1px solid black;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 16px;
+}
+
+.project{
+    /*height: 150px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.heading{
+    height: 50px;
+}
+
+.main-2{
+    padding: 16px;
+    border: 1px solid black;
+}
+
+
+.announcements-description{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Trending{
+    margin-top: 32px;
+}
+
+
+/* ************************    Mobile Version     ************************ */
+
+@media only screen and (max-width: 700px) {
+    input[type='text']{
+        width: 250px;
+    }
+}
