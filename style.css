@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 .icon-1{
@@ -20,13 +21,22 @@
 .profile-1{
     width: 30px;
     height: 30px;
+    border-radius: 50%;
 }
 
 .container{
     display: grid;
     grid-template-columns: 1fr 3fr;
+    row-gap: 8px;
 }
 
+.description>h4 {
+    margin-bottom: 8px;
+}
+
+h3>span{
+    font-size: small;
+}
 
 
 /* ************************    Header     ************************ */
@@ -35,14 +45,14 @@
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 5px 5px 5px  #777777;
 }
 
 .header-1, .header-2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
-    padding: 8px 32px;
+    padding: 16px 32px;
 }
 
 .search{
@@ -69,7 +79,14 @@
 
 .buttons{
     display: flex;
-    gap: 64px;
+    gap: 32px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 16px;
+    background-color: rgb(156, 156, 241); 
 }
 
 .profile-picture{
@@ -78,7 +95,11 @@
 }
 
 .search-box{
-    width: 500px;
+    width:40vw;
+    margin-right: 16px;
+    background-color: #f3f4f6;
+    height: 25px;
+    border-radius: 16px;
 }
 
 
@@ -91,8 +112,7 @@
     flex-direction: column;
     gap: 50px;
     padding: 16px 32px;
-    border: 1px solid black;
-    /* background-color: rgb(156, 156, 241); */
+    background-color: rgb(156, 156, 241); 
 }
 
 .dashboard-icon{
@@ -119,7 +139,8 @@ a{
 .main{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    border: 1px solid black;
+    background-color: #f3f4f6;
+   
 }
 
 .main-1{
@@ -127,7 +148,7 @@ a{
     grid-template-rows: 50px repeat(auto-fit,minmax(100px,1fr));
     grid-template-columns: 1fr;
     padding: 16px;
-    border: 1px solid black;
+    
 }
 
 .projects{
@@ -150,7 +171,7 @@ a{
 
 .main-2{
     padding: 16px;
-    border: 1px solid black;
+    
 }
 
 
@@ -165,10 +186,12 @@ a{
 }
 
 
-/* ************************    Mobile Version     ************************ */
+/* ************************    Mobile Version     ************************ 
 
 @media only screen and (max-width: 700px) {
     input[type='text']{
         width: 250px;
     }
 }
+
+*/
