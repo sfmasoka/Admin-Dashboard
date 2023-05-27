@@ -1,11 +1,11 @@
 :root{
     box-sizing: border-box;
-
+    font-family: "Helvetica", "Arial", sans-serif;
 }
 *{
     margin: 0;
     padding: 0;
-    border: none;
+
 }
 
 .icon-1{
@@ -80,13 +80,18 @@ h3>span{
 .buttons{
     display: flex;
     gap: 32px;
+    
 }
+
 
 button{
     width: 100px;
     height: 30px;
     border-radius: 16px;
-    background-color: rgb(156, 156, 241); 
+    background-color: rgb(156, 156, 241);
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
 }
 
 .profile-picture{
@@ -100,6 +105,7 @@ button{
     background-color: #f3f4f6;
     height: 25px;
     border-radius: 16px;
+    border: none;
 }
 
 
@@ -113,11 +119,13 @@ button{
     gap: 50px;
     padding: 16px 32px;
     background-color: rgb(156, 156, 241); 
+    
 }
 
 .dashboard-icon{
     width: 50px;
     height: 50px;
+    
 }
 
 .icon-group, .sidebar-1{
@@ -125,6 +133,17 @@ button{
     align-items: center;
     gap: 16px;
     margin-bottom: 16px;
+
+}
+
+.sidebar-1{
+    font-size:24px;
+    font-weight: bold;
+}
+
+.sidebar-2>.icon-group,.sidebar-3>.icon-group{
+    font-weight: bold;
+    font-size: 18px;;
 }
 
 a{
@@ -163,7 +182,21 @@ a{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    border-left: 8px solid rgb(95, 94, 94);
 }
+
+.project, .announcements-description, .Trending-group{
+    background-color: white;
+    padding: 32px 16px;
+    border-radius: 8px;
+}
+
+.project-functions{
+    display: flex;
+    gap: 32px;
+    margin-top: 16px;
+}
+
 
 .heading{
     height: 50px;
@@ -174,6 +207,10 @@ a{
     
 }
 
+
+.trend > p > span {
+    font-weight: bold;
+}
 
 .announcements-description{
     display: flex;
